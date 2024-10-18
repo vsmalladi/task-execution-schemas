@@ -21,14 +21,8 @@ jobs:
         with:
           branch: gh-pages
           folder: .
-
-name: Deploy Documentation to GitHub Pages
-on:
-  push:
-    branches:
-      - main
-jobs:
   deploy:
+    if: github.ref == 'refs/heads/master'  # Only run this job on the master branch
     runs-on: ubuntu-latest
         steps:
       - name: Setup Node.js environment
