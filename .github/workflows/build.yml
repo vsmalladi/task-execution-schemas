@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Setup Node.js environment
-        uses: actions/setup-node@4
+        uses: actions/setup-node@v4
         with:
           node-version: 14.x
           # Comes with npm 6. For newer Node, encountered: https://github.com/npm/cli/issues/3359
