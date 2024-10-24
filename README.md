@@ -1,5 +1,7 @@
 <img src="https://www.ga4gh.org/wp-content/themes/ga4gh/dist/assets/svg/logos/logo-full-color.svg" alt="GA4GH Logo" style="width: 400px;"/>
 
+![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)
+
 [![release_badge](https://img.shields.io/github/v/tag/ga4gh/task-execution-schemas?label=latest%20release&logo=github&style=flat)](https://github.com/ga4gh/task-execution-schemas/releases)
 
 `master` branch status
@@ -385,16 +387,20 @@ To cancel a task, send an HTTP POST to the cancel endpoint:
 POST /v1/tasks/task-1234:cancel
 ```
 
-Possible Future Enhancements
-----------------------------
-
-* Integrate with GA4GH DRS to resolve input data source (possibly support for DRS URIs as permissible values of input URLs).
-* Integrate with GA4GH TRS to resolve container images (possibly support for TRS URIs as permissible values of executor image names).
-
 
 How to Contribute Changes
 -------------------------
 
-See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+### Community Contributions and Spec Advancement
+
+The advancement of the GA4GH Task Execution Schema (TES) relies on active community engagement and contributions. While submitting issues is an effective way to report bugs or foster discussions about existing or proposed features, it is important to note that these actions alone do not lead to modifications in the specification. The most effective method for implementing changes is through the submission of a pull request (PR). 
+
+For detailed guidance on how to contribute, please refer to the [Contributing](CONTRIBUTING.md) document.
 
 If a security issue is identified with the specification, please send an email to security-notification@ga4gh.org detailing your concerns.
+
+
+### Governance
+
+The TES specification is entirely community driven, however it is overseen by a governance committee. For more information please see the [Governance](GOVERNANCE.md) documentation.
